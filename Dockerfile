@@ -9,6 +9,8 @@ COPY . /app
 
 # Install the app dependencies
 RUN pip install flask
+EXPOSE 5000
 
 # Tell Docker what command to run when the container starts
 CMD ["python3", "app.py"]
+
